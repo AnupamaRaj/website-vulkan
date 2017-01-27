@@ -25,10 +25,14 @@
     <link href="css/agency.min.css" rel="stylesheet">
 	<link href="css/agency.css" rel="stylesheet">
     <script type="text/javascript" src="countdown.js"></script>
-
+    <script src="js/jquery.countdown.js"></script>
+    <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="countdown/jquery.countdownTimer.js"></script>
+    <link rel="stylesheet" type="text/css" href="countdown/CSS/jquery.countdownTimer.css" />
 </head>
 
 <body id="page-top" class="index">
+
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -84,12 +88,24 @@
                 
                 <div class="intro-heading"><img  src="img/logo.jpg" alt="">vulkan motorsports</div>
 				<div class="intro-lead-in">Welcome To Our Studio!</div>
-				
+				<span id="future_date"></span><br />
                 <a href="#about" class="page-scroll btn btn-xl">Tell Me More</a>
+                
             </div>
         </div>
-    </header>
+        
 
+    </header>
+<script>
+        $(function(){
+            $('#future_date').countdowntimer({
+                dateAndTime : "2017/05/05 00:00:00",
+                size : "lg",
+                regexpMatchFormat: "([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})",
+regexpReplaceWith: "$1<sup class='displayformat'>days</sup> / $2<sup class='displayformat'>hours</sup> / $3<sup class='displayformat'>minutes</sup> / $4<sup class='displayformat'>seconds</sup>"
+            });
+        });
+    </script>
     <!-- Services Section 
     <section id="services">
         <div class="container">
@@ -357,6 +373,8 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+    <script type="text/javascript" src="countdown/jquery.countdownTimer.js"></script>
 
 </body>
 
