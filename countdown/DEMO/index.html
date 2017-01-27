@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <title>jquery countDownTimer Demo reverse countdown clock</title>
+        <meta name="description" content="reverse clock plugin for jQuery.">
+            <meta name="keywords" content="jQuery, plugin, count down">
+                <meta name="viewport" content="width=device-width,initial-scale=1">
+                    <script type="text/javascript" src="../LIB/jquery-2.0.3.js"></script>
+                    <script type="text/javascript" src="../jquery.countdownTimer.js"></script>
+                    <link rel="stylesheet" type="text/css" href="../CSS/jquery.countdownTimer.css" />
+                    </head>
+                    <body>
+                        <div id="main">
+                            <header>
+                                <h1><a href="https://www.npmjs.com/package/countdowntimer" target="_blank" title="jquery countdownTimer Plugin">jquery countdownTimer Plugin</a>&nbsp;Demo</h1>
+                                <p><a href="http://github.com/harshen/jquery-countdownTimer/zipball/1.0.8" title="Download">Download</a></p>
+                                <p>Reverse count down jquery plugin as per your need.</p>
+                            </header>
+                         
+                        
+                            <table style="border:0px;">
+                                <tr>
+                                    <td colspan="8"><span id="future_date"></span></td>
+                                </tr>
+                            </table>
+
+
+                            <script>
+                                $(function(){
+                                    $('#future_date').countdowntimer({
+                                        dateAndTime : "2018/01/01 00:00:00",
+                                        size : "lg",
+                                        regexpMatchFormat: "([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})",
+      					regexpReplaceWith: "$1<sup class='displayformat'>days</sup> / $2<sup class='displayformat'>hours</sup> / $3<sup class='displayformat'>minutes</sup> / $4<sup class='displayformat'>seconds</sup>"
+                                    });
+                                });
+                            </script>
+			             </div>
+                    </body>
+                    </html>
+
