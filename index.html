@@ -24,12 +24,7 @@
     <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
 	<link href="css/agency.css" rel="stylesheet">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <script type="text/javascript" src="countdown.js"></script>
 
 </head>
 
@@ -86,9 +81,11 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">vulkan motorsports</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+                
+                <div class="intro-heading"><img  src="img/logo.jpg" alt="">vulkan motorsports</div>
+				<div class="intro-lead-in">Welcome To Our Studio!</div>
+				
+                <a href="#about" class="page-scroll btn btn-xl">Tell Me More</a>
             </div>
         </div>
     </header>
@@ -139,7 +136,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">About Us</h2>
-                    <h3 class="section-subheading text-muted">VULKAN MOTORSPORTS is a team that spends an enormous amount of time together throughout the school year which helps the team work together effectively. We work together to find new ways to combine our wide array of engineering talents and experiences to build and design a unique formula type race car. Students utilize engineering skills and state of the art tools to design and verify the car. Our team is comprised primarily of mechanical engineering students, but we also welcome students from other majors. </h3>
+                    <h3 class="section-subheading text-muted">VULKAN MOTORSPORTS is a team from Sir MVIT that spends an enormous amount of time together throughout the college years which helps the team work together effectively. We work together to find new ways to combine our wide array of engineering talents and experiences to build and design a unique formula type race car. Students utilize engineering skills and state of the art tools to design and verify the car. Our team is comprised primarily of mechanical engineering students, but we also welcome students from other majors. </h3>
+					<h2 class="section-heading">About Formula SAE</h2>
+                    <h3 class="section-subheading text-muted">Formula SAE (FSAE) is a student design competition endorsed by the Society of Automotive Engineers. Each year SAE International challenges students to design, build, and race a small formula style car. During the design phase, students must adhere to competition rules created by SAE International. These rules encourage students to create more innovative designs and test their engineering skills with real world problems.<br> <u>Competition</u> </br>The Formula SAE competition takes place in different parts of the world and teams from all over the world compete in these events. The competition is designed to test each team by static events which test design and knowledge of various aspects of vehicle design and manufacture. The cars are rigorously tested during dynamic events which test drivability, reliability, and the overall performance of the car. The car is also presented to members of industry who judge the design and manufacturing work and give the team guidance and advice. These critiques help our team learn about and improve upon designs.</h3>
+					
 					<h2 class="section-heading">What we do?<br></h2>
 
 				</div>
@@ -149,7 +149,7 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/about/9.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -163,7 +163,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/about/weld.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -177,7 +177,7 @@
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/about/80.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -191,7 +191,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                                <img class="img-circle img-responsive" src="img/about/quiz.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -199,15 +199,14 @@
                                     <h4 class="subheading">Problem Solving</h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">arise. Problems can arise during any phase of the project, from designing and packaging the car with CAD programs to the final testing of the car. Each challenge that arises is a chance to improve the car’s design as well as the team’s knowledge of the car. </p>
+                                    <p class="text-muted">Problems can arise during any phase of the project, from designing and packaging the car with CAD programs to the final testing of the car. Each challenge that arises is a chance to improve the car’s design as well as the team’s knowledge of the car. </p>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
+                                <img class="img-circle img-responsive" src="img/about/logo1.jpg" alt="">
+								
                             </div>
                         </li>
                     </ul>
@@ -244,7 +243,30 @@
                 </div>
             </div>
         </div>
-    </aside>
+    </aside>-->
+	
+	
+<h1>Countdown Clock</h1>
+<div id="clockdiv" function=getTimeRemaining(17-08-2017)>
+  <div>
+    <span class="days"></span>
+    <div class="smalltext">Days</div>
+  </div>
+  <div>
+    <span class="hours"></span>
+    <div class="smalltext">Hours</div>
+  </div>
+  <div>
+    <span class="minutes"></span>
+    <div class="smalltext">Minutes</div>
+  </div>
+  <div>
+    <span class="seconds"></span>
+    <div class="smalltext">Seconds</div>
+  </div>
+</div>
+
+
 
     <!-- Contact Section -->
     <section id="contact">
@@ -252,7 +274,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">Team Vulkan MOtorsports</h3>
                 </div>
             </div>
             <div class="row">

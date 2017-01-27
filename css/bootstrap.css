@@ -1289,6 +1289,9 @@ h6,
 p {
   margin: 0 0 10px;
 }
+.sponsors{
+	text-align:center;
+}
 .lead {
   margin-bottom: 20px;
   font-size: 16px;
@@ -4923,6 +4926,7 @@ a.label:focus {
   background-color: #777;
   border-radius: 10px;
 }
+
 .badge:empty {
   display: none;
 }
