@@ -22,13 +22,10 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
+    <link rel="stylesheet" href="css/flipclock.css">
     <link href="css/agency.min.css" rel="stylesheet">
 	<link href="css/agency.css" rel="stylesheet">
-    <script type="text/javascript" src="countdown.js"></script>
-    <script src="js/jquery.countdown.js"></script>
     <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
-    <script type="text/javascript" src="countdown/jquery.countdownTimer.js"></script>
-    <link rel="stylesheet" type="text/css" href="countdown/CSS/jquery.countdownTimer.css" />
 </head>
 
 <body id="page-top" class="index">
@@ -88,7 +85,7 @@
                 
                 <div class="intro-heading"><img  src="img/logo.jpg" alt="">vulkan motorsports</div>
 				<div class="intro-lead-in">Welcome To Our Studio!</div>
-				<span id="future_date"></span><br />
+				<center><div class="clock"></div></center>
                 <a href="#about" class="page-scroll btn btn-xl">Tell Me More</a>
                 
             </div>
@@ -96,16 +93,29 @@
         
 
     </header>
-<script>
-        $(function(){
-            $('#future_date').countdowntimer({
-                dateAndTime : "2017/05/05 00:00:00",
-                size : "lg",
-                regexpMatchFormat: "([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2}):([0-9]{1,2})",
-regexpReplaceWith: "$1<sup class='displayformat'>days</sup> / $2<sup class='displayformat'>hours</sup> / $3<sup class='displayformat'>minutes</sup> / $4<sup class='displayformat'>seconds</sup>"
+
+        
+        <script type="text/javascript">
+            var clock;
+
+            $(document).ready(function() {
+
+                // Grab the current date
+                var currentDate = new Date();
+
+                // Set some date in the future. In this case, it's always Jan 1
+                var futureDate  = new Date(2017, 8, 17, 0, 0, 0, 0);
+
+                // Calculate the difference in seconds between the future and current date
+                var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+                // Instantiate a coutdown FlipClock
+                clock = $('.clock').FlipClock(diff, {
+                    clockFace: 'DailyCounter',
+                    countdown: true
+                });
             });
-        });
-    </script>
+        </script>
     <!-- Services Section 
     <section id="services">
         <div class="container">
@@ -373,8 +383,8 @@ regexpReplaceWith: "$1<sup class='displayformat'>days</sup> / $2<sup class='disp
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
-    <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
-    <script type="text/javascript" src="countdown/jquery.countdownTimer.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/flipclock.js"></script>
 
 </body>
 
