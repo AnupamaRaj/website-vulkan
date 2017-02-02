@@ -21,7 +21,7 @@ h6 {
     font-weight: 700;
 }
 h3{
-	font-family:"Comic Sans MS";
+	font-family:"Baskerville Old Face";
 }
 
 #SB{
@@ -30,6 +30,10 @@ h3{
 	font-size:75px;
 	padding-top:65px;
 	
+}
+.sponsors{
+	padding-left:50px;
+	padding-bottom:50px;
 }
 .topnav {
     font-size: 14px; 
@@ -50,6 +54,7 @@ h3{
 }
 
 .intro-message {
+	
     position: relative;
     padding-top: 20%;
     padding-bottom: 20%;
@@ -104,12 +109,12 @@ h3{
 
 .content-section-a {
     padding: 50px 0;
-    background-color: #f8f8f8;
+    background-color: #bebebe;
 }
 
 .content-section-b {
     padding: 50px 0;
-    border-top: 1px solid #e7e7e7;
+    border-top: 1px solid #000000;
     border-bottom: 1px solid #e7e7e7;
 }
 
@@ -119,7 +124,7 @@ h3{
 
 .section-heading-spacer {
     float: left;
-    width: 200px;
+    width: 150px;
     border-top: 3px solid #e7e7e7;
 }
 
