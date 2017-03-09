@@ -26,11 +26,23 @@
     <link href="css/agency.min.css" rel="stylesheet">
 	<link href="css/agency.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+	<script>
+	//paste this code under head tag or in a seperate js file.
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+	</script>
+
 </head>
 
 <body id="page-top" class="index">
 
-
+<div class="se-pre-con"></div>
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
@@ -55,18 +67,18 @@
                     </li>
 
 					<li>
-                        <a class="page-scroll" href="#">Events</a>
+                        <a class="page-scroll" href="activities.html">Activities</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="team.html">Team</a>
                     </li>
 					
 					<li>
-                        <a class="page-scroll" href="sponsor.html">Sponsor Us</a>
+                        <a class="page-scroll" href="#">Our Sponsors</a>
 						
                     </li>
 					<li>
-                        <a class="page-scroll" href="#">Support Us</a>
+                        <a class="page-scroll" href="supportus.html">Support Us</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -103,10 +115,10 @@
             $(document).ready(function() {
 
                 // Grab the current date
-                var currentDate = new Date(2017, 2, 1, 0, 0, 0, 0);
+                var currentDate = new Date();
 
                 // Set some date in the future. In this case, it's always Jan 1
-                var futureDate  = new Date(2017, 8, 17, 0, 0, 0, 0);
+                var futureDate  = new Date(2017, 7, 17, 0, 0, 0, 0);
 
                 // Calculate the difference in seconds between the future and current date
                 var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
@@ -203,12 +215,6 @@
             </div>
         </div>
     </section>
-
-    
-
-    
-
-
 
     <!-- Contact Section -->
     <section id="contact">

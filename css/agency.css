@@ -1,4 +1,14 @@
-
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../img/loader-64x/Preloader8.gif) center no-repeat #fff;
+}
 body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -276,6 +286,7 @@ header .intro-text .intro-heading {
     font-size: 75px;
     line-height: 75px;
     margin-bottom: 50px;
+	
   }
 }
 section {
@@ -287,12 +298,14 @@ section h2.section-heading {
   margin-bottom: 15px;
 }
 section h3.section-subheading {
-  font-size: 16px;
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-family: "Cooper Black";
   text-transform: none;
-  font-style: italic;
+  font-style: normal;
   font-weight: 400;
   margin-bottom: 75px;
+  font-stretch:expanded;
+  
 }
 @media (min-width: 768px) {
   section {
